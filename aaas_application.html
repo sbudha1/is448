@@ -1,0 +1,125 @@
+<!--
+    Author: Zeeshan Hussain
+    Use case: Application Form
+-->
+<html lang="en">
+
+<head>
+    <title>All Animals Adoption Service</title>
+    <link href="aaas.css" type="text/css" rel="stylesheet">
+    <script src="aaas_application.js" defer></script>
+</head>
+
+<body>
+    <div class="nav">
+        <h3>
+            <a href="index.html"><img src="aaas.png" alt="AAAS logo" /></a>&emsp;&emsp;
+            <a href="login1.php">Login</a>&emsp;
+            <a href="search.html">Search</a>&emsp;
+            <a href="aaas_application.html">Apply</a>&emsp;
+            <a href="meeting.html">Meet Us</a>&emsp;
+            <a href="feedback.html">Feedback</a>
+        </h3>
+    </div>
+    <div class="content">
+        <h1>User Application</h1>
+
+        <form action="submit_application.php" method="POST">
+            <label for="name">Applicant Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+
+            <label for="age">Are you 18 years or older?</label><br>
+            <input type="radio" id="age-yes" name="age" value="yes">
+            <label for="age-yes">Yes</label>
+            <input type="radio" id="age-no" name="age" value="no">
+            <label for="age-no">No</label><br><br>
+
+            <label for="student">Are you a student?</label><br>
+            <input type="radio" id="student-yes" name="student" value="yes">
+            <label for="student-yes">Yes</label>
+            <input type="radio" id="student-no" name="student" value="no">
+            <label for="student-no">No</label><br><br>
+
+            <label for="pet-type">What type of pet are you interested in?</label>
+            <select id="pet-type" name="pet-type">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+                <option value="orange">Orange</option>
+                <option value="mixed">Mixed</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+
+
+            <label for="responsible">Will you be responsible for the pet's care?</label><br>
+            <input type="radio" id="responsible-yes" name="responsible" value="yes">
+            <label for="responsible-yes">Yes</label>
+            <input type="radio" id="responsible-no" name="responsible" value="no">
+            <label for="responsible-no">No</label><br><br>
+
+            <label for="other-pets">Do you currently have any other pets in your residence?</label><br>
+            <input type="radio" id="other-pets-yes" name="other-pets" value="yes">
+            <label for="other-pets-yes">Yes</label>
+            <input type="radio" id="other-pets-no" name="other-pets" value="no">
+            <label for="other-pets-no">No</label><br><br>
+
+            <label for="rent-own">Do you rent or own?</label><br>
+            <input type="radio" id="rent-own-rent" name="rent-own" value="rent">
+            <label for="rent-own-rent">Rent</label>
+            <input type="radio" id="rent-own-own" name="rent-own" value="own">
+            <label for="rent-own-own">Own</label><br><br>
+
+            <label for="pets-allowed">Are pets allowed?</label><br>
+            <input type="radio" id="pets-allowed-yes" name="pets-allowed" value="yes">
+            <label for="pets-allowed-yes">Yes</label>
+            <input type="radio" id="pets-allowed-no" name="pets-allowed" value="no">
+            <label for="pets-allowed-no">No</label><br><br>
+
+            <label for="outdoors">If outdoors, will the pet be attended?</label><br>
+            <input type="radio" id="outdoors-yes" name="outdoors" value="yes">
+            <label for="outdoors-yes">Yes</label>
+            <input type="radio" id="outdoors-no" name="outdoors" value="no">
+            <label for="outdoors-no">No</label><br><br>
+
+            <label for="home-day">Will anyone be home during the day?</label><br>
+            <input type="radio" id="home-day-yes" name="home-day" value="yes">
+            <label for="home-day-yes">Yes</label>
+            <input type="radio" id="home-day-no" name="home-day" value="no">
+            <label for="home-day-no">No</label><br><br>
+
+            <label for="unattended-hours">If not, how many hours a day will the pet be unattended?</label><br>
+            <input type="text" id="unattended-hours" name="unattended-hours"><br><br>
+
+            <input type="submit" id="submitBtn" value="Submit">
+        </form>
+    </div>
+    <div class="foot">
+        <p>
+            <a href="index.html">About us</a>&emsp;
+            <a href="index.html">Home</a>&emsp;
+            <a href="index.html">Contact Us</a>&emsp;
+        </p>
+    </div>
+</body>
+
+</html>

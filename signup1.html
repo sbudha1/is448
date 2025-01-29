@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+	Author: Mandy Chen
+	Use case: Login Use Case
+-->
+<html lang="EN">
+<head> 
+	<title>All Animals Adoption Service</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="aaas.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script src="signup.js"></script>
+	<style>
+
+		.content {
+			text-align: center;
+		}
+		table {
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+<div class="nav">
+	<h3>
+		<a href="index.html"><img src="aaas.png" alt="AAAS logo" /></a>&emsp;&emsp;
+		<a href="login1.html">Login</a>&emsp;
+		<a href="search.html">Search</a>&emsp;
+		<a href="aaas_application.html">Apply</a>&emsp;
+		<a href="meeting.html">Meet Us</a>&emsp;
+		<a href="feedback.html">Feedback</a>
+	</h3>
+</div>
+
+<div class="content">
+	<h1>Welcome to AAAS!</h1>
+	<h2>Sign Up Today:</h2>
+	<form action="signup.php" method="POST">
+				Time:<span id="time"></span> </span> <br><br>
+				<label for="firstname">First Name:</label>
+				<input type="text" id="firstname" name="firstname"><br><br>
+				
+				<label for="lastname">Last Name:</label>
+				<input type="text" id="lastname" name="lastname"><br><br>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone"><br><br>
+				
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password"><br><br>
+				
+				<input type="submit" value="Submit" id="submit">
+			
+			</form>
+	<p>If you already have an account, click <a href="login1.html">here</a> instead.</p>
+</div>
+
+<div class="foot">
+	<br>
+	<p>
+		<a href="index.html">About us</a>&emsp;
+		<a href="index.html">Home</a>&emsp;
+		<a href="index.html">Contact Us</a>&emsp;
+	</p>
+</div>
+
+</body>
+</html>

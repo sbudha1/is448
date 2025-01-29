@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- 
+	Author: Katelyn Atkinson
+	Use case: 2 animal search/filter
+-->
+<html lang="EN">
+<head> 
+	<title>All Animals Adoption Service</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="aaas.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script type="text/javascript"  src="search.js" >
+    </script>
+	<style>
+		hr{
+			height: 2px;
+			color: #ad3c17;
+			background-color: #ad3c17;
+		}
+		img.ani{
+			width: 95%;
+			height 95%;
+		}
+		td.ani{
+			width: 26%;
+			text-align: center;
+			border: 2px solid;
+			border-radius: 25px;
+		}
+		h2, h4{
+			text-align: center;
+		}
+		h4{
+			margin: 5px;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="nav">
+
+	<h3>
+		<a href="index.html"><img src="aaas.png" alt="AAAS logo" /></a>&emsp;&emsp;
+		<a href="login1.html">Login</a>&emsp;
+		<a href="search.html">Search</a>&emsp;
+		<a href="aaas_application.html">Apply</a>&emsp;
+		<a href="meeting.html">Meet Us</a>&emsp;
+		<a href="feedback.html">Feedback</a>
+	</h3>
+
+</div>
+<div class="content">
+	
+	<h2>Search for your dream pet!</h2>
+	<!-- Change to searchPets.php and method to post to make dynamic -->
+	<form name="searchForm" id="searchForm" action="searchPets.php" method="post">
+	<table class="formTable">
+	<tr>
+		<td>
+		<label>Animal type:
+			<select name="animalType" id="animalType">
+				<option value="Dog">Dog</option>
+				<option value="Cat">Cat</option>
+				<option value="Bird">Bird</option>
+				<option value="Fish">Fish</option>
+				<option value="Horse">Horse</option>
+			</select>
+		</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<dl><dt>Age:</dt>
+			<dd><label><input type="radio" name="age" id="ageA" value="any">Any</label></dd>
+			<dd><label><input type="radio" name="age" id="ageY" value="young">Young</label></dd>
+			<dd><label><input type="radio" name="age" id="ageA" value="adult">Adult</label></dd>
+			<dd><label><input type="radio" name="age" id="ageS" value="senior">Senior</label></dd>
+		</dl>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<dl><dt>Hair type:</dt>
+			<dd><label><input type="radio" name="hairType" id="hairA" value="any">Any</label></dd>
+			<dd><label><input type="radio" name="hairType" id="hairL" value="long">Long</label></dd>
+			<dd><label><input type="radio" name="hairType" id="hairS" value="short">Short</label></dd>
+			<dd><label><input type="radio" name="hairType" id="hairO" value="other">Other</label></dd>
+		</dl>
+		</td>
+		
+		<td>
+		<dl><dt>Size:</dt>
+			<dd><label><input type="radio" name="size" id="sizeA" value="any">Any</label></dd>
+			<dd><label><input type="radio" name="size" id="sizeL" value="large">Large</label></dd>
+			<dd><label><input type="radio" name="size" id="sizeM" value="medium">Medium</label></dd>
+			<dd><label><input type="radio" name="size" id="sizeS" value="small">Small</label></dd>
+		</dl>
+		</td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="Search" id="submit"/>
+		<input type="reset" value="Reset" id="reset"/></td>
+	</tr>
+	</table>
+	</form>
+	<table>
+	<tr>
+		<td><div><button id="pick">Help me pick an animal</button></div></td>
+		<td><div id="pickArea"></div></td>
+	</tr>
+	</table>
+	<hr>
+	
+	<h2>Available pets</h2>
+	
+	<table>
+		<tr><!-- Dogs -->
+			<td class="ani">
+				<h4>Sally</h4>
+				<img class="ani" src="animals/pomeranian_dog_senior_long_small.jpg" alt="pomeranian" />Senior ~ Pomeranian
+			</td>
+			<td class="ani">
+				<h4>Tom</h4>
+				<img class="ani" src="animals/beagle_dog_adult_short_medium.jpg" alt="beagle" />Adult ~ Beagle
+			</td>
+			<td class="ani">
+				<h4>Tiger</h4>
+				<img class="ani" src="animals/greatdane_dog_young_short_large.jpg" alt="great dane" />Young ~ Great Dane
+			</td>
+		</tr>
+		<tr><!-- Cats -->
+			<td class="ani">
+				<h4>Mouse</h4>
+				<img class="ani" src="animals/mainecoon_cat_young_long_large.jpg" alt="mainecoon" />Young ~ Maine coon
+			</td>
+			<td class="ani">
+				<h4>Moose</h4>
+				<img class="ani" src="animals/singapura_cat_adult_short_small.jpg" alt="singapura" />Adult ~ Singapura
+			</td>
+			<td class="ani">
+				<h4>Dave</h4>
+				<img class="ani" src="animals/britishshorthair_cat_senior_short_medium.jpg" alt="british shorthair" />Senior ~ British Shorthair
+			</td>
+		</tr>
+		<tr><!-- Birds -->
+			<td class="ani">
+				<h4>Sam</h4>
+				<img class="ani" src="animals/budgie_bird_adult_other_small.jpg" alt="budgie" />Adult ~ Budgie
+			</td>
+			<td class="ani">
+				<h4>Pinky</h4>
+				<img class="ani" src="animals/sunconure_bird_young_other_medium.jpg" alt="sun conure" />Young ~ Sun conure
+			</td>
+			<td class="ani">
+				<h4>Robert</h4>
+				<img class="ani" src="animals/macaw_bird_senior_other_large.jpg" alt="macaw" />Senior ~ Macaw
+			</td>
+		</tr>
+		<tr><!-- Fish -->
+			<td class="ani">
+				<h4>Cookie</h4>
+				<img class="ani" src="animals/guppy_fish_adult_other_small.jpg" alt="guppy" />Adult ~ Guppy
+			</td>
+			<td class="ani">
+				<h4>George</h4>
+				<img class="ani" src="animals/oscar_fish_senior_other_large.jpg" alt="oscar" />Senior ~ Oscar
+			</td>
+			<td class="ani">
+				<h4>Bubbles</h4>
+				<img class="ani" src="animals/goldfish_fish_young_other_medium.jpg" alt="goldfish" />Young ~ Goldfish
+			</td>
+		</tr>
+		<tr><!-- Horses -->
+			<td class="ani">
+				<h4>Winnie</h4>
+				<img class="ani" src="animals/clydesdale_horse_adult_other_large.jpg" alt="clydesdale horse" />Adult ~ Clydesdale
+			</td>
+			<td class="ani">
+				<h4>Tom</h4>
+				<img class="ani" src="animals/arabian_horse_senior_other_medium.jpg" alt="arabian horse" />Senior ~ Arabain
+			</td>
+			<td class="ani">
+				<h4>Suzy</h4>
+				<img class="ani" src="animals/shetlandPony_horse_young_other_small.jpg" alt="shetland pony" />Young ~ Shetland pony
+			</td>
+		</tr>
+	</table>
+	
+</div>
+<div class="foot">
+
+	<p>
+		<a href="index.html">About us</a>&emsp;
+		<a href="index.html">Home</a>&emsp;
+		<a href="index.html">Contact Us</a>&emsp;
+	</p>
+
+</div>
+
+</body>
+</html>

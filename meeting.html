@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = "EN">
+<!-- 
+	Author: Shanti Budha
+	Booking of virtual appointment
+-->
+<head> 
+	<title>All Animals Adoption Service </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="book_meeting.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<link href="aaas.css" type="text/css" rel="stylesheet">
+	
+	<style>
+		.boxleft{
+			float: left;
+			text-align: center;
+			border: 2px black solid;
+			padding:5px;
+			margin-top: 90px;
+			margin-left:150px;
+		}
+		
+		.boxright{
+			float:right;
+			text-align: center;
+			border: 2px black solid;
+			padding:5px;
+			margin-right:150px;
+			margin-bottom:20px;
+		}
+		
+		
+
+		table{
+			border-collapse: collapse;
+			margin: 0 auto;
+		}
+		th,td{
+			border: 1px black solid;
+			text-align: center;
+		}
+		h2{
+			text-align:center;
+		
+		}
+	</style>
+	
+</head>
+<body>
+<div class="nav">
+
+	<h3>
+		<a href="index.html"><img src="aaas.png" alt="AAAS logo" /></a>&emsp;&emsp;
+		<a href="login1.html">Login</a>&emsp;
+		<a href="search.html">Search</a>&emsp;
+		<a href="aaas_application.html">Apply</a>&emsp;
+		<a href="meeting.html">Meet Us</a>&emsp;
+		<a href="feedback.html">Feedback</a>
+	</h3>
+</div>
+
+<div class="content">
+	<h2> Virtual Meetings with us here at AAAS </h2>
+	<div class="boxleft">
+	<p>
+	Join us for our virtual information sessions! <br> Sessions held online every tuesday @ 6pm ET.
+	<br>
+	AAAS account needed to participate. <br>
+	<a href="login1.html">Login</a>&emsp;
+	<a href="signup1.html">Sign up</a>&emsp;
+	</p>
+	</div>
+	
+<div class="boxright">
+	<p>
+	Want to connect with staff more personally? <br>
+	Schedule a 15 minute 1-to-1 virtual meeting with us today! <br> <b>Automatic redirection to login page if you are not logged in.</b>
+	<br>
+	<br>
+	Select from the available dates/times: <br>	
+	<span id="msgbox"></span>
+	</p>
+	<form id="meetingForm" name="book meeting" action="book_meeting.php" method="post"> 
+		<table>
+		<caption> Book Meeting</caption>
+		<tr>	
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>  
+		</tr>
+		<tr>
+			<td>9.00am
+			<input type="radio" name="timing" value="9:00:00" id="900"></td>
+			<td>9.15am
+			<input type="radio" name="timing" value="9:15:00" id="915" ></td>
+			<td>9.30am
+			<input type="radio" name="timing" value="9:30:00" id="930" ></td>
+			<td>9.45am
+			<input type="radio" name="timing" value="9:45:00" id="945" ></td>
+		</tr>
+		<tr>
+			<td>10.00am
+			<input type="radio" name="timing" value="10:00:00" id="1000" ></td>
+			<td>10.15am
+			<input type="radio" name="timing" value="10:15:00" id="1015" ></td>
+			<td>10.30am
+			<input type="radio" name="timing" value="10:30:00" id="1030" ></td>
+			<td>10.45am
+			<input type="radio" name="timing" value="10:45:00" id="1045" ></td>
+		</tr>
+		<tr>
+			<td>11.00am
+			<input type="radio" name="timing" value="11:00:00" id="1100" ></td>
+			<td>11.15am
+			<input type="radio" name="timing" value="11:15:00" id="1115" ></td>
+			<td>11.30am
+			<input type="radio" name="timing" value="11:30:00" id="1130" ></td>
+			<td>11.45am
+			<input type="radio" name="timing" value="11:45:00" id="1145" ></td>
+		</tr>
+		<tr>
+			<td>12.00pm
+			<input type="radio" name="timing" value="12:00:00" id="1200" ></td>
+			<td>12.15pm
+			<input type="radio" name="timing" value="12:15:00" id="1215" ></td>
+			<td>12.30pm
+			<input type="radio" name="timing" value="12:30:00" id="1230" ></td>
+			<td>12.45pm
+			<input type="radio" name="timing" value="12:45:00" id="1245" ></td>
+		</tr>
+	
+	</table>
+	<br>
+	<input type="submit" value="submit" id="submitB">
+	</form>
+	
+	</div>
+	
+	
+<div class="foot">
+
+	<p>
+		<a href="index.html">About us</a>&emsp;
+		<a href="index.html">Home</a>&emsp;
+		<a href="index.html">Contact Us</a>&emsp;
+	</p>
+
+</div>
+
+</body>
+</html>
+	
+	
+	
+	
+	
